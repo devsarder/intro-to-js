@@ -7,21 +7,23 @@ function sumOfArray(array) {
   return sum;
 }
 
-let array = [1, 21, 22, 23, 24, 25, 26, 27, 28, 29];
-let countSum = sumOfArray(array);
-console.log(countSum);
+// let array = [1, 21, 22, 23, 24, 25, 26, 27, 28, 29];
+// console.log(countSum);
 
 // get odd numbers of an array
 function getOddArray(numbers) {
-  let arr = [];
-  for (let i = 0; i < numbers.length; i++) {
-    let element = numbers[i];
-    if (element % 2 == 1) {
-        arr.push(element);
+    let arr = [];
+    for (let i = 0; i < numbers.length; i++) {
+        let element = numbers[i];
+        if (element % 2 == 1) {
+            arr.push(element);
+        }
     }
-  }
-  return arr;
+    return arr;
 }
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 const oddNumbers = getOddArray(numbers);
 console.log(oddNumbers);
+
+let countSum = sumOfArray(oddNumbers);
+console.log(countSum);
