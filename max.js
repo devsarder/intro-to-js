@@ -39,7 +39,7 @@ console.log("the max number is :", maxNumber);
 // used function to find the tallest number of an array..
 
 function maxInArray(numbers) {
-  let tallest = [0];
+  let tallest = numbers[0];
   for (let i = 0; i < numbers.length; i++) {
     let element = numbers[i];
     if(element > tallest){
